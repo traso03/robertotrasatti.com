@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--color-primary);
+}
+
+.footer--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.footer--info {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.2rem;
+}
+
+.footer--socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer--socials a {
+  font-size: 1.5rem;
+}
+
+.footer--copyright {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1.2rem;
+}
