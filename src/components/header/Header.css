@@ -1,5 +1,5 @@
 .header {
-  background-color: white;
+  background-color: var(--color-header);
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -17,7 +17,7 @@
 }
 
 .header--name a:hover {
-  color: var(--color-links);
+  color: var(--color-dark);
   transition: none;
 }
 
@@ -97,5 +97,8 @@
 
   .header--links--mobile li {
     padding: 1rem 1.2rem;
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid var(--color-primary);
   }
 }
