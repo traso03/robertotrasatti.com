@@ -46,8 +46,8 @@
 @media screen and (max-width: 600px) {
   .hero--grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 70%;
-    gap: 0;
+    grid-template-rows: 25% 65%;
+    gap: 10%;
   }
 
   .hero--grid--info {
@@ -56,6 +56,10 @@
 
   .hero--grid--photo {
     order: 1;
+  }
+
+  .hero--grid--photo > img {
+    max-width: 50%;
   }
 
   .hero--grid--info h1,
