@@ -1,19 +1,31 @@
 import React from 'react';
 import './Footer.css';
 
-import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
+import { MdEmail } from 'react-icons/md';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 
 const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer--grid'>
-        <div className='footer--info'>P. IVA 12345678910</div>
+        <div className='footer--info'>All rights reserved.</div>
         <div className='footer--socials'>
-          <a href='#'>
-            <AiOutlineLinkedin />
+          <a
+            href='mailto:contact@robertotrasatti.com'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <MdEmail />
           </a>
-          <a href='#'>
-            <AiOutlineGithub />
+          <a
+            href='https://linkedin.com/in/robertotrasatti/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <BsLinkedin />
+          </a>
+          <a href='https://github.com/traso03' target='_blank' rel='noreferrer'>
+            <BsGithub />
           </a>
         </div>
       </div>

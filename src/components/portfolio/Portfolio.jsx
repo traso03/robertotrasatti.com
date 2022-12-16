@@ -5,7 +5,14 @@ import LaboratorioHel from '../../assets/laboratoriohel.jpg';
 
 const projects = [
   {
-    id: 1,
+    id: 4,
+    title: 'Laboratorio H&L',
+    image: LaboratorioHel,
+    github: null,
+    demo: 'https://laboratoriohel.it/',
+  },
+  {
+    id: 3,
     title: 'WebApp for Aeronautica Militare',
     image: TopSecret,
     github: null,
@@ -13,24 +20,17 @@ const projects = [
   },
   {
     id: 2,
-    title: 'App Desktop for Marina Militare',
-    image: TopSecret,
-    github: null,
-    demo: null,
-  },
-  {
-    id: 3,
     title: 'WebService for Poste Italiane',
     image: TopSecret,
     github: null,
     demo: null,
   },
   {
-    id: 4,
-    title: 'Laboratorio H&L',
-    image: LaboratorioHel,
+    id: 1,
+    title: 'App Desktop for Marina Militare',
+    image: TopSecret,
     github: null,
-    demo: 'https://laboratoriohel.it/',
+    demo: null,
   },
 ];
 

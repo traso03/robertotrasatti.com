@@ -6,15 +6,16 @@ import { FaHamburger } from 'react-icons/fa';
 import { CgClose } from 'react-icons/cg';
 
 const links = [
-  { text: 'About', emojiCode: '', url: 'about' },
+  { text: 'About', emojiCode: '', url: 'hero' },
+  { text: 'Experience', emojiCode: '', url: 'experience' },
   { text: 'Portfolio', emojiCode: '', url: 'portfolio' },
   { text: 'Contact', emojiCode: '', url: 'contact' },
 ];
 
-const LinkItem = ({ text, emojiCode, url }) => {
+const LinkItem = ({ text, emojiCode, url, openMenu }) => {
   return (
     <li>
-      <a href={'#' + url}>
+      <a href={'#' + url} onClick={openMenu}>
         <span>{emojiCode}</span>
         {' ' + text}
       </a>
@@ -50,7 +51,7 @@ const Header = () => {
       <nav className='header--nav'>
         <ul className='header--links'>
           {links.map((link, index) => (
-            <LinkItem key={index} {...link} />
+            <LinkItem key={index} openMenu={openMenu} {...link} />
           ))}
         </ul>
 
@@ -61,7 +62,7 @@ const Header = () => {
         {isMobileMenuOpen && (
           <ul className='header--links--mobile'>
             {links.map((link, index) => (
-              <LinkItem key={index} {...link} />
+              <LinkItem key={index} openMenu={openMenu} {...link} />
             ))}
           </ul>
         )}
