@@ -51,7 +51,7 @@ const Header = () => {
       <nav className='header--nav'>
         <ul className='header--links'>
           {links.map((link, index) => (
-            <LinkItem key={index} openMenu={openMenu} {...link} />
+            <LinkItem key={index} {...link} />
           ))}
         </ul>
 
