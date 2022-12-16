@@ -1,3 +1,9 @@
+# Hello everyone!
+
+This is my personal website built entirely by me with React.js after a period of self-taught study.
+For training I purposely avoided CSS libraries.
+Any advice and corrections are welcome!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
